@@ -3,10 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>めじゅ Pages Lab</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: sans-serif;
+      background: #000;
+    }
+
+    .hero {
+      position: relative;
+      width: 100%;
+      min-height: 100vh;
+
+      background-image:
+        linear-gradient(
+          rgba(0, 0, 0, 0.15),
+          rgba(0, 0, 0, 0.55)
+        ),
+        url("Hero01.WEBP");
+
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+
+      padding: 60px 24px;
+    }
+
+    .hero-content {
+      text-align: center;
+      color: white;
+      text-shadow: 0 2px 12px rgba(0, 0, 0, 0.8);
+    }
+
+    .hero h1 {
+      margin: 0 0 12px;
+      font-size: clamp(2rem, 5vw, 4.5rem);
+    }
+
+    .hero p {
+      margin: 0;
+      font-size: clamp(1rem, 2vw, 1.4rem);
+    }
+  </style>
 </head>
+
 <body>
-  <h1>GitHub Pages、実験中じゃ🤣</h1>
-  <p>めじゅのGitHub Pages研究所へようこそ。</p>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>GitHub Pages、実験中じゃ🤣</h1>
+      <p>めじゅのGitHub Pages研究所へようこそ。</p>
+    </div>
+  </section>
+
 </body>
 </html>
